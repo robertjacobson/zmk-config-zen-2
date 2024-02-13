@@ -27,10 +27,11 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
           };
-         n_prev_grave: tap_dance_0 {
+          n_prev_grave: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
             bindings = <&kp GRAVE>, <&kp C_NEXT>, <&kp C_PREV>;
+          };
         };
         keymap {
                 compatible = "zmk,keymap";
