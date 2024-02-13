@@ -27,11 +27,10 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
           };
-          n_prev_grave: next_prev_grave { 
+          n_prev_grave: next_prev_grave {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEXT_PREVIOUS";
-            #binding-cells = <0>;
-            bindings = <&mt C_NEXT GRAVE>, <&kp C_PREV>;
+            label = "NEXT_PREVIOUS_GRAVE";
+            bindings = <&mt C_NEXT GRAVE>, <&kp C_PREV>, <&kp GRAVE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
           };
         //   td_cmd_del: tap_dance_cmd_del {
