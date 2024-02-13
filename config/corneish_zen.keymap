@@ -27,19 +27,10 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
           };
-          n_prev_grave: next_prev_grave {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NEXT_PREVIOUS_GRAVE";
-            bindings = <&mt C_NEXT GRAVE>, <&kp C_PREV>, <&kp GRAVE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-          };
-        //   td_cmd_del: tap_dance_cmd_del {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "TAP_DANCE_COMMAND_DEL";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <200>;
-        //     bindings = <&mt LGUI BSPC>, <&key_repeat BSPC>;
-        //   };
+         n_prev_grave: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            tapping-term-ms = <200>;
+            bindings = <&kp GRAVE>, <&kp C_NEXT>, <&kp C_PREV>;
         };
         keymap {
                 compatible = "zmk,keymap";
