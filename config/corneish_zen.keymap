@@ -29,6 +29,7 @@
           };
           n_prev_grave: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp GRAVE>, <&kp C_NEXT>, <&kp C_PREV>;
           };
